@@ -20,6 +20,8 @@ Nota: No tomar en cuenta los archivos de texto (.txt) a lo largo de la ruta de u
 
 * Ensayo en formato pdf: ubicado en la ruta: TC3006C_AI_Avanzada/Portafolio_Analisis/Analisis_contexto_normatividad/Entregable1/Analisis_contexto_normatividad.pdf
 
+  ## Normatividad del reto:
+
 1. **Normatividad asociada a falta de confiabilidad de los algoritmos:** Asegurar que los datos con los que se entrenan los algoritmos sean de alta calidad(libres de errores
    o inconsistencias en su estructura), con el fin de evitar que debido a las inconsistencias en los datos, los algoritmos no logren aprender adecuadamente y como consecuencia,
    generen predicciones erradas que se alejen mucho de la realidad y por tanto carezcan de confiabilidad.
