@@ -1,13 +1,13 @@
 # TC3006C_AI_Avanzada
 Repositorio para almacenar archivos del portafolio de implementación, de análsis y del reto
 
-# Valhalla Challenge: Entrega 2
+# Valhalla Challenge: Entrega 3
 
 Archivos a revisar para esta entrega y su ubicación dentro del repositorio:
 
-* Jupyter Notebook (archivo .ipynb): ubicado en la ruta TC3006C_AI_Avanzada/Portafolio_Implementacion/Machine_Learning/Valhalla_Entrega2/Valhalla2.ipynb
+* Jupyter Notebook (archivo .ipynb): ubicado en la ruta TC3006C_AI_Avanzada/Portafolio_Analisis/Machine_Learning/Reporte_Performance1/Análisis_Reporte_Valhalla.ipynb
    
-* PDF del Jupyter Notebook: ubicado en la ruta TC3006C_AI_Avanzada/Portafolio_Implementacion/Machine_Learning/Valhalla_Entrega2/Valhalla2.pdf
+* PDF del Jupyter Notebook: ubicado en la ruta TC3006C_AI_Avanzada/Portafolio_Analisis/Machine_Learning/Reporte_Performance1/Análisis_Reporte_Valhalla.pdf
 
 Nota: No tomar en cuenta los archivos de texto (.txt) a lo largo de la ruta de ubicación de los archivos, ya que sirvieron solamente para crear 
       las carpetas de la ruta, pero no hay contenido asociado al proyecto en ellos.
