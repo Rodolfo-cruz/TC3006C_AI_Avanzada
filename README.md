@@ -7,7 +7,7 @@ Archivos a revisar para esta entrega y su ubicación dentro del repositorio:
 
 * Jupyter notebook (archivo .ipynb): ubicado en la ruta Portafolio_Implementacion/Machine_Learning/Valhalla_Entrega1/Valhalla_Sin_Framework.ipynb
   
-* PDF del Jupyter Notebook: ubicado en la ruta
+* PDF del Jupyter Notebook: ubicado en la ruta Portafolio_Implementacion/Machine_Learning/Valhalla_Entrega1/Valhalla_Sin_Framework.pdf
 
 ## Correcciones indicadas y cómo se resolvieron
 
