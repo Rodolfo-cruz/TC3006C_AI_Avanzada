@@ -5,7 +5,7 @@ Repositorio para almacenar archivos del portafolio de implementación, de análs
 
 Archivos a revisar para esta entrega y su ubicación dentro del repositorio:
 
-* Jupyter notebook (archivo .ipynb): ubicado en la ruta
+* Jupyter notebook (archivo .ipynb): ubicado en la ruta Portafolio_Implementacion/Machine_Learning/Valhalla_Entrega1/Valhalla_Sin_Framework.ipynb
   
 * PDF del Jupyter Notebook: ubicado en la ruta
 
