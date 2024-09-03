@@ -1,6 +1,44 @@
 # TC3006C_AI_Avanzada
 Repositorio para almacenar archivos del portafolio de implementación, de análsis y del reto
 
+# Valhalla Challenge: Sin Framework
+
+Archivos a revisar para esta entrega y su ubicación dentro del repositorio:
+
+* Jupyter notebook (archivo .ipynb): ubicado en la ruta
+  
+* PDF del Jupyter Notebook: ubicado en la ruta
+
+## Correcciones indicadas y cómo se resolvieron
+
+* **Tasa de aprendizaje muy grande (repetir simulación con valores de alpha más pequeños hasta encontrar uno adecuado):** se resolvió reduciendo el valor de la tasa de
+  aprendizaje de 0.003 a 0.0001, dado la tasa de aprendizaje de 0.003 aún era grande, por lo que el algoritmo no lograba converger adecuadamente, ya que el algoritmo
+  pasaba por alto el punto de convergencia, sin embargo, al reducir el alpha a 0.0001 y correr la simulación una cierta cantidad de veces más, el algorimo logró ajustarse
+  cada vez más al punto de convergencia ideal, al reducir los valores de J a valores mayormente pequeños, siendo éstos: 18.55 en el caso del subconjunto de entrenamiento y
+  29.73 para el caso del subconjunto de prueba, en comparación con los valores J superiores a 200 que resultaban de correr la simulación con un alpha de 0.003 (tasa de aprendizaje grande),
+  además se tuvo que correr la simulación varias veces debido a que los datos empleados en la misma se generan de forma aleatoria, por lo que en cada ejecución de la simulación, se obtenían
+  valores de J diferentes, por lo que se repitió la simulación hasta encontrar un modelo que se ajustara lo mejor posible a los datos y que tuviera los valores de J más pequeños.
+
+* **No entrenar 2 modelos distintos:** se resolvió implementando una función adicional para el entrenamiento del modelo llamada model_train() que recibe como parámetro de entrada los datos
+  para entrenar el modelo y su vez invoca a la función gradiente_descendente() para llevar a cabo todo el proceso del algoritmo utilizando exclusivamente los datos para entrenamiento, para
+  finalmente imprimir como salida la ecuación del modelo de regresión lineal que mejor se ajusta a los datos, junto con el valor de J para el subconjunto de entrenamiento. Además, también se
+  implementó otra función adicional llamada model_test() que recibe como argumento de entrada esta vez el subconjunto de datos para poner a prueba el modelo definido en el entrenamiento, además,
+  dicha función model_test() calcula las predicciones de los valks para los datos en celsius en el subconjunto de prueba haciendo uso de la función de hipótesis h, para posteriormente calcular
+  el valor de J, pero esta vez usando los datos del subconjunto de prueba y el número de registros que tiene dicho subconjunto, por lo que después de calcular las predicciones para los datos del
+  subconjunto de prueba junto con el valor J para el subconjunto de prueba, la función model_test() diseñada exclusivamente para probar el modelo, procede a retornar el conjunto de predicciones
+  obtenidas y el valor J para el subconjunto de datos de prueba, por lo que al tener una función exclusivamente para entrenar los modelos y otra exclusivamente para probarlos, se elimina el hecho de
+  entrenar 2 modelos distintos, 1 por cada subconjunto de datos.
+
+* **El desempeño del modelo sobre el testing set no es adecuado:** se resolvió modificando el valor de ciertos parámetros del modelo antes de cada ejecución de la simulación, en concreto modificando el
+  valor de 2 parámetros principales, alpha (tasa de aprendizaje del modelo) y el número máximo de iteraciones del mismo, por ejemplo se corrió la simulación con un alpha de 0.0001 y un máximo de iteraciones
+  de 10,000, lo cual provocó que la recta del modelo pasara a estar inclinada hacia la izquierda (pendiente negativa) en lugar de hacia la derecha (pendiente positiva), lo cual propició que el modelo se acercara
+  mucho más a los datos que antes cuando la pendiente del modelo era positiva, sin embargo, dicho modelo no se terminaba de ajustar de forma mayormente adecuada a los datos reales, por lo cual, se corrió otra
+  simulación, esta vez con un alpha de 0.0001 y un máximo de 50,000 iteraciones, lo cual resultó en que el modelo resultante se ajustaba ligeramente mejor a los datos reales, aunque tampoco se terminaba de ajustar
+  de forma mayormente adecuada, lo cual condujo a repetir nuevamente la simulación con un alpha de 0.0001 y un máximo de 100,000 iteraciones, lo cual después de varias ejecuciones dada la aleatoriedad de los datos,
+  se logró que el modelo resultante se ajustara adecuadamente en su gran mayoría a los datos reales con un mínimo margen de error, además, conforme se obtuvieran valores predichos positivos más cercanos a 100 en cada simulación, el modelo resultante se ajustaba cada vez mejor a los datos reales, por lo cual después de varias repeticiones de la simulación con alpha de 0.0001 y máximo de 100,000 iteraciones a causa de la aleatoriedad presente en los datos, se lograron obtener predicciones con valores positivos muy próximos a 100, en concreto 97.9 como máximo, indicando que el modelo se ajustaba adecuadamente en su gran mayoría a los datos de prueba, motivo por el cual el desempeño del modelo final obtenido sobre el testing set fue bastante adecuado.
+
+* **No se calcula el valor de la función de costo para subconjunto de entrenamiento y para subconjunto de prueba:** se resolvió incluyendo en las funciones model_train() y model_test() el cálculo para el valor de la función de costo J en base al modelo obtenido en el entrenamiento, esto con la finalidad de que se evidencie el valor de J para cada subconjunto de datos (entrenamiento y prueba), para lo cual, dentro de las funciones model_train() y model_test() se manda a llamar a la función J_function() cuya función consiste en calcular el valor del costo J para cada uno de los 2 subconjuntos de datos en su respectiva función correspondiente (al subset de entrenamiento se asocia con la función model_train(), mientras que el subset de prueba está asociado con la función model_test()), por lo tanto, tomando en cuenta lo anterior, se calcula el valor J para cada subconjunto por separado en su respectiva función asociada, lo cual resuelve el hecho de que anteriormente se calculaba el valor de J por cada subconjunto de datos, pero a la vez entrenando 2 modelos diferentes, en concreto 1 exclusivo para el subconjunto de entrenamiento y un segundo exclusivamente para el subconjunto de prueba, por lo cual al calcular el valor de J en 2 funciones distintas, cada una asociada al entrenamiento y prueba respectivamente del modelo, se logra visualizar de una forma mucho más clara las distinciones entre el entrenamiento y la puesta a prueba del modelo obtenido, entre las que se encuentran el hecho de que se logre distinguir con facilidad cuál función o funciones se encargan de llevar a cabo el proceso de entrenamiento del modelo a partir del subconjunto de entrenamiento y aquella otra función cuyo propósito principal básicamente consiste en probar el modelo ya obtenido previamente pero sin generar otro modelo nuevo a partir del subconjunto de prueba que es diferente al de entrenamiento. 
+
 # Valhalla Challenge: Entrega 3
 
 Archivos a revisar para esta entrega y su ubicación dentro del repositorio:
