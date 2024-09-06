@@ -1,15 +1,35 @@
 # TC3006C_AI_Avanzada
 Repositorio para almacenar archivos del portafolio de implementación, de análsis y del reto
 
-# Valhalla Challenge: Sin Framework
+# Portafolio de implementación
+
+En el portafolio de implementación se incluyen los siguientes proyectos o actividades:
+
+## Módulo 1 estadística: 
+
+Los archivos a revisar del módulo de estadística pertenecientes al portafolio de implementación son los siguientes:
+
+* Actividades 6 a 12 y actividad integradora 2: ubicadas en la ruta **Portafolio_Implementacion/Estadistica**
+
+## Módulo 2: Valhalla Challenge sin framework
 
 Archivos a revisar para esta entrega y su ubicación dentro del repositorio:
 
-* Jupyter notebook (archivo .ipynb): ubicado en la ruta Portafolio_Implementacion/Machine_Learning/Valhalla_Entrega1/Valhalla_Sin_Framework.ipynb
+* Jupyter notebook (archivo .ipynb): ubicado en la ruta **Portafolio_Implementacion/Machine_Learning/Valhalla_Entrega1/Valhalla_Sin_Framework.ipynb**
   
-* PDF del Jupyter Notebook: ubicado en la ruta Portafolio_Implementacion/Machine_Learning/Valhalla_Entrega1/Valhalla_Sin_Framework.pdf
+* PDF del Jupyter Notebook: ubicado en la ruta **Portafolio_Implementacion/Machine_Learning/Valhalla_Entrega1/Valhalla_Sin_Framework.pdf**
+
+## Módulo 2: Valhalla Challenge con framework
+
+Archivos a revisar y su ubicación:
+
+* Jupyter notebook (archivo .ipynb): ubicado en **Portafolio_Implementacion/Machine_Learning/Valhalla_Entrega2/Valhalla2.ipynb**
+  
+* PDF del Jupyter Notebook: ubicado en **Portafolio_Implementacion/Machine_Learning/Valhalla_Entrega2/Valhalla2.pdf**
 
 ## Correcciones indicadas y cómo se resolvieron
+
+### Módulo 2: Valhalla Challenge sin framework
 
 * **Tasa de aprendizaje muy grande (repetir simulación con valores de alpha más pequeños hasta encontrar uno adecuado):** se resolvió reduciendo el valor de la tasa de
   aprendizaje de 0.003 a 0.0001, dado la tasa de aprendizaje de 0.003 aún era grande, por lo que el algoritmo no lograba converger adecuadamente, ya que el algoritmo
