@@ -1,5 +1,16 @@
 # TC3006C_AI_Avanzada
+
 Repositorio para almacenar archivos del portafolio de implementación, de análsis y del reto
+
+# Portafolio de análisis
+
+En el portafolio de análisis se incluyen los siguientes proyectos y actividades:
+
+## Módulo 1 estadística:
+
+Los archivos a revisar del módulo de estadística pertenecientes al portafolio de análisis son los siguientes:
+
+* Actividades 1 a 5 y actividad integradora 1: ubicadas en la ruta **Portafolio_Analisis/Módulo 1. Estadística**
 
 # Portafolio de implementación
 
