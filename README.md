@@ -2,6 +2,9 @@
 
 Repositorio para almacenar archivos del portafolio de implementación, de análsis y del reto
 
+**Nota general:** no tomar en cuenta los archivos de texto (.txt) ubicados a lo largo de las rutas de los archivos, ya que no hay
+                  contenido asociado al proyecto en ellos. 
+
 # Portafolio de análisis
 
 En el portafolio de análisis se incluyen los siguientes proyectos y actividades:
@@ -12,6 +15,49 @@ Los archivos a revisar del módulo de estadística pertenecientes al portafolio 
 
 * Actividades 1 a 5 y actividad integradora 1: ubicadas en la ruta **Portafolio_Analisis/Módulo 1. Estadística**
 
+## Módulo 2: Análisis y reporte sobre el desempeño del modelo
+
+Para el análisis y reporte sobre el desmepeño del modelo, los archivos a revisar son:
+
+* Jupyter Notebook: ubicado en la ruta ...
+  
+* PDF del Jupyter Notebook: ubicado en la ruta ...
+
+## Reto: ensayo sobre ética y normatividad
+
+Para el ensayo sobre ética y normatividad asociadas al reto y al caso real analizado de discriminación algorítmica, el archivo
+a revisar es:
+
+* PDF del ensayo: ubicado en la ruta ...
+
+## Aspectos a corregir y cómo se resolvieron
+
+### Módulo 2: Análisis y reporte sobre el desempeño del modelo
+
+* **Gráfica de subconjuntos (entrenamiento, validación, prueba) y del modelo obtenido sin evidenciar una tendencia específica:** Ésta situación
+  se resolvió en primer lugar creando 3 dataframes adicionales, uno para cada subconjunto de datos a utilizar en todo el proceso de análsis de
+  los modelos, pero con la diferencia de que en esta ocasión, cada dataframe tendrá sus datos correspondientes ordenados de forma ascendente
+  en base a la variable predictora de grados celsius, además, una vez creados los 3 dataframes con los datos de cada subconjunto estando debidamente
+  ordenados, ahora se procede a graficar para cada dato real en celsius, su correspondiente valor en grados Valks, esto
+  se realiza para cada subconjunto de datos, es decir, que se tendrá una serie de puntos que representarán a aquellos datos para entrenamiento, otra serie de
+  puntos para representar los datos de validación y una tercerá correspondiente a los de prueba, por lo que después de graficar las 3 series de puntos (1 por subset de datos),
+  el siguiente paso consistió en que se agregara a la gráfica previa, la recta que simboliza al modelo de regresión lineal calculado para los datos en cuestión, el cual
+  corresponde prácticamente a la tendencia que siguen los datos del subconjunto de validación del modelo, ya que la gráfica del modelo tras terminar su etapa de validación nos
+  indica qué tan adecuadamente el modelo "mejorado" en términos de sus hiperparámetros, es capaz de ajustarse a los datos reales para predecir el valor de los mismos de la forma
+  más precisa y confiable posible, por lo tanto, al graficar el modelo mejorado en la etapa de validación, se observa que la recta color rojo que representa a dicho modelo, se aproxima
+  en su gran mayoría a los datos verdaderos de los 3 subconjuntos de datos, lo cual indica que dicho modelo resulta ser un ajuste mayormente adecuado para los datos reales analizados,
+  motivo por el cual, en resumen, al ordenar de forma ascendente los datos anteriormente obtenidos de forma aleatoria antes de graficarlos, se garantizó que se evidenciara alguna tendencia o
+  patrón entre los datos en cuestión, ya que de esa manera fue posible ilustrar adecuadamente la cantidad de cambio en la variable Valks en función de la cantidad de cambio en grados celsius,
+  arrojando como resultado una tendencia decreciente entre los grados celsius y valks, es decir que la tendencia encontrada entre los datos de las variables básicamente radica en que conforme
+  se aumente la cantidad de grados celsius, la cantidad de grados valks disminuirá, por lo cual, en caso de querer que la temperatura del ambiente sea más fría para erradicar el calentamiento global,
+  será necesario ingresar en la máquina reguladora de temperatura, valores en valks que sean positivos y que además sean de una magnitud medianamente considerable, para lograr generar la cantidad de frío
+  adecuada para compensar el calor del cambio climático. por lo que también será muy importante asegurarse de que no se ingresen valks negativos o muy pequeños a la máquina reguladora, ya que esto provocará
+  que el ambiente se torne aún más cálido y como consecuencia la crisis del calentamiento global se agrave aún más. 
+
+### Reto: ensayo sobre ética y normatividad
+
+
+
 # Portafolio de implementación
 
 En el portafolio de implementación se incluyen los siguientes proyectos o actividades:
@@ -20,7 +66,7 @@ En el portafolio de implementación se incluyen los siguientes proyectos o activ
 
 Los archivos a revisar del módulo de estadística pertenecientes al portafolio de implementación son los siguientes:
 
-* Actividades 6 a 12 y actividad integradora 2: ubicadas en la ruta **Portafolio_Implementacion/Estadistica**
+* Actividades 6 a 12 y actividad integradora 2: ubicadas en la ruta **Portafolio_Implementacion/Módulo 1. Estadística**
 
 ## Módulo 2: Valhalla Challenge sin framework
 
