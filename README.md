@@ -56,8 +56,33 @@ a revisar es:
 
 ### Reto: ensayo sobre ética y normatividad
 
+* **Extensión del documento superior a lo requerido:** Esta situación se resolvió investigando más información sobre la temática de IA en la toma de decisiones y en base a dicha información,
+  resumir aún más el contenido escrito anteriormente, asegurando que el contenido resumido tenga exactamente el mismo significado que el contenido extenso original, además de ampliar la cantidad
+  de referencias empleadas para toda la investigación en general, propiciando que la investigación en general esté más fundamentada y a la vez se comunique el mismo mensaje pero con una cantidad
+  considerablemente menor de palabras.
 
+* **Estructura del documento no adecuada para su comprensión:** La situación se resolvió agregando secciones a lo largo del ensayo, con el objetivo principal de delimitar el contenido del mismo, en
+  el sentido de poder identificar fácilmente cuáles párrafos pertenecen a cada sección del ensayo y en consecuencia, la comprensión del ensayo sea mucho mejor, además de que también el ensayo siga
+  una secuencia clara y ordenada de temas abordados para que la lectura del ensayo sea mayormente amigable para el lector y éste mismo pueda captar fácil y rápidamente la idea principal del tema central.
 
+* **Agregar caso práctico que ejemplique lo expliado en el documento:** Esta situación se resolvió investigando en distintas fuentes bibliográficas, entre ellas un artículo publicado por el sitio web
+  Harvard Business Review, un caso práctico en el que un algortimo basado en IA manda por Facebook anuncios de ofertas laborales para trabajos de cajero de supermercado a un 85% de mujeres y trabajos como
+  taxistas a un 75% de hombres de piel negra, lo que constituye una violación a los derechos humanos, además de discriminación racial (racismo), lo cual indica que el algoritmo de IA en este caso está
+  gravemente sesgado y por tanto su entrenamiento resulta ser de una calidad mayormente deficiente, lo que conduce a su vez a clasificaciones igualmente erradas e incluso discriminatorias.
+
+* **Identificar si los elementos analizados en el ensayo se pueden trasladar al reto:** La situación se resolvió agregando un breve párrafo al ensayo en la sección titulada **Análisis ético y normativo de la solución del reto**, en el cual se explica que el principal elemento analizado en el ensayo que se puede trasladar al reto radica en que de similar manera a cómo se identificó el evitar diagnósticos erróneos en medicina como
+principio ético de dicha disciplina, en el contexto del reto, uno de los principios éticos consiste en evitar la reproducción, copia, distribución, publicación, venta, entre otras acciones ilícitas que es posible
+llevar a cabo para explotar la información proporcionada por la plataforma Kaggle, lo que además llega a violar los derechos de autor y de propiedad intelectual de la misma, además de transgredir incluso el derecho a la
+privacidad de la información del propietario de los datos (Kaggle), por lo cual lo anterior se investigó en el sitio oficial de Kaggle en la sección titulada como **Condiciones de uso. Kaggle** donde básicamente se exponen todo el conjunto de normas y principios éticos y legales que deben seguir todos aquellos usuarios que formen parte de la comunidad digital, entre los cuales se encuentran aquellos principios que rigen la compartición
+y uso de los datos, información y otros servicios ofrecidos por la plataforma en beneficio de sus usuarios, por lo que en base a esto, en el ensayo también se explica que básicamente las normas para compartir los datos de
+Titanic y entre los miembros del equipo consiste en evitar el plagio de los datos provistos por Kaggle, además del uso indecuado de los mismos (divulgación, publicación, alteración no autorizadas) por parte de todos los
+miembros del equipo durante todo el desarrollo del reto, garantizando así que durante todo el reto, el equipo utilice los datos solamente para los propósitos establecidos en el reto y no para llevar a cabo acciones fuera
+de dicho ámbito de tal manera que se respete el derecho a la privacidad y no se comprometa la seguridad de la plataforma de Kaggle.
+
+* **Agregar las referencias que surgan de esta mejora a la lista de referencias ya incorporadas:** Esto se resolvió básicamente actualizando en el archivo editable de word, la lista de referencias incorporadas en el ensayo
+  de tal forma que de las 2 referencias que tenía originalmente el ensayo, la versión final y corregida del mismo pasó a tener 6 referencias en total, por lo que hubo un aumento de 4 referencias debida a las mejoras
+  que se implementaron en el ensayo a raíz de la retroalimentación recibida por el profesor de reto, mejorando de esa manera la calidad de toda la investigación realizada. 
+  
 # Portafolio de implementación
 
 En el portafolio de implementación se incluyen los siguientes proyectos o actividades:
