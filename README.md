@@ -19,16 +19,16 @@ Los archivos a revisar del módulo de estadística pertenecientes al portafolio 
 
 Para el análisis y reporte sobre el desmepeño del modelo, los archivos a revisar son:
 
-* Jupyter Notebook: ubicado en la ruta ...
+* Jupyter Notebook: ubicado en la ruta **Portafolio_Analisis/Machine_Learning/Análisis_Reporte_Valhalla.ipynb**
   
-* PDF del Jupyter Notebook: ubicado en la ruta ...
+* PDF del Jupyter Notebook: ubicado en la ruta **Portafolio_Analisis/Machine_Learning/Análisis_Reporte_Valhalla.pdf**
 
 ## Reto: ensayo sobre ética y normatividad
 
 Para el ensayo sobre ética y normatividad asociadas al reto y al caso real analizado de discriminación algorítmica, el archivo
 a revisar es:
 
-* PDF del ensayo: ubicado en la ruta ...
+* PDF del ensayo: ubicado en la ruta **Portafolio_Analisis/Analisis_contexto_normatividad/Analisis_contexto_normatividad.pdf**
 
 ## Aspectos a corregir y cómo se resolvieron
 
@@ -141,27 +141,7 @@ Archivos a revisar y su ubicación:
 
 * **No se calcula el valor de la función de costo para subconjunto de entrenamiento y para subconjunto de prueba:** se resolvió incluyendo en las funciones model_train() y model_test() el cálculo para el valor de la función de costo J en base al modelo obtenido en el entrenamiento, esto con la finalidad de que se evidencie el valor de J para cada subconjunto de datos (entrenamiento y prueba), para lo cual, dentro de las funciones model_train() y model_test() se manda a llamar a la función J_function() cuya función consiste en calcular el valor del costo J para cada uno de los 2 subconjuntos de datos en su respectiva función correspondiente (al subset de entrenamiento se asocia con la función model_train(), mientras que el subset de prueba está asociado con la función model_test()), por lo tanto, tomando en cuenta lo anterior, se calcula el valor J para cada subconjunto por separado en su respectiva función asociada, lo cual resuelve el hecho de que anteriormente se calculaba el valor de J por cada subconjunto de datos, pero a la vez entrenando 2 modelos diferentes, en concreto 1 exclusivo para el subconjunto de entrenamiento y un segundo exclusivamente para el subconjunto de prueba, por lo cual al calcular el valor de J en 2 funciones distintas, cada una asociada al entrenamiento y prueba respectivamente del modelo, se logra visualizar de una forma mucho más clara las distinciones entre el entrenamiento y la puesta a prueba del modelo obtenido, entre las que se encuentran el hecho de que se logre distinguir con facilidad cuál función o funciones se encargan de llevar a cabo el proceso de entrenamiento del modelo a partir del subconjunto de entrenamiento y aquella otra función cuyo propósito principal básicamente consiste en probar el modelo ya obtenido previamente pero sin generar otro modelo nuevo a partir del subconjunto de prueba que es diferente al de entrenamiento. 
 
-# Valhalla Challenge: Entrega 3
-
-Archivos a revisar para esta entrega y su ubicación dentro del repositorio:
-
-* Jupyter Notebook (archivo .ipynb): ubicado en la ruta TC3006C_AI_Avanzada/Portafolio_Analisis/Machine_Learning/Reporte_Performance1/Análisis_Reporte_Valhalla.ipynb
-   
-* PDF del Jupyter Notebook: ubicado en la ruta TC3006C_AI_Avanzada/Portafolio_Analisis/Machine_Learning/Reporte_Performance1/Análisis_Reporte_Valhalla.pdf
-
-**Nota:** No tomar en cuenta los archivos de texto (.txt) a lo largo de la ruta de ubicación de los archivos, ya que sirvieron solamente para crear 
-      las carpetas de la ruta, pero no hay contenido asociado al proyecto en ellos.
-
-# Normatividad del reto elegido del artículo (toma de decisiones algorítmica):
-
-**Nota:** No tomar en cuenta los archivos de texto .txt a lo largo de la ruta de ubicación de los archivos, ya que solamente sirvieron para generar 
-          las carpetas de las rutas, pero dichos archivos no tienen contenido relacionado a la concentración.
-
-**Archivos a revisar y su ubicación en el repositorio:**
-
-* Ensayo en formato pdf: ubicado en la ruta: TC3006C_AI_Avanzada/Portafolio_Analisis/Analisis_contexto_normatividad/Entregable1/Analisis_contexto_normatividad.pdf
-
-  ## Normatividad del reto:
+  ## Normatividad del reto o socio formador:
 
 1. **Normatividad asociada a falta de confiabilidad de los algoritmos:** Asegurar que los datos con los que se entrenan los algoritmos sean de alta calidad(libres de errores
    o inconsistencias en su estructura), con el fin de evitar que debido a las inconsistencias en los datos, los algoritmos no logren aprender adecuadamente y como consecuencia,
