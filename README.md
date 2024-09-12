@@ -91,7 +91,7 @@ En el portafolio de implementación se incluyen los siguientes proyectos o activ
 
 Los archivos a revisar del módulo de estadística pertenecientes al portafolio de implementación son los siguientes:
 
-* Actividades 6 a 12 y actividad integradora 2: ubicadas en la ruta **Portafolio_Implementacion/Módulo 1. Estadística**
+* Actividades 6 a 13 y actividad integradora 2: ubicadas en la ruta **Portafolio_Implementacion/Módulo 1. Estadística**
 
 ## Módulo 2: Valhalla Challenge sin framework
 
